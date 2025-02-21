@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+   header{
+    font-family: 'poppins';
+    color: rgb(255, 0, 140)
+    }
+    h2{
+        font-family: 'poppins';
+        color:rgb(255, 0, 140)
+    }
+   section{
+    color:rgb(0, 0, 0);
+   }
+
+}

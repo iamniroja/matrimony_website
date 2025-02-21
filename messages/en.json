@@ -1,0 +1,32 @@
+{
+  "title": "MANI MATRIMONY",
+  "register_now": "Register now",
+   "subtitle": "When your Dream Wedding come true",
+
+  "highlight": "Dream Wedding",
+  "quote": "“Once in a while, right in the middle of an ordinary life, love gives us a fairy tale.”",
+  "free_registration": "For free registration, Call now",
+  "services": {
+    "air_ticketing": "Air Ticketing",
+    "visa_consulting": "Visa Consulting",
+    "online_visa": "Online Visa Services",
+    "appointments": "All Online Appointments",
+    "insurance": "Travel Insurance & Itinerary",
+    "hotel_booking": "Hotel Booking",
+    "airport_transport": "Airport Transportation",
+    "translation": "Translation (Tamil, English, Dutch)"
+  },
+  "contact": {
+    "title": "Mani Travels & Tours (Pvt) Ltd",
+    "subtitle": "Visa consultation",
+    "phone_1": "+94 74 725 978",
+    "call_1":"Call now",
+    "phone_2": "011 239 144 6",
+    "call_2":"Call now",
+    "address": "No 312 Sea Street, Colombo-11",
+    "open_map": "Open in map",
+    "email": "common1187@gmail.com",
+    "send":"Send now"
+    
+  }
+}
