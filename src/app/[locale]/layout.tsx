@@ -2,8 +2,8 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {Locale, routing} from '@/i18n/routing';
-import "@/app/[locale]/global.css";
-import Select from "@/app/components/Select";
+import "@/app/globals.css";
+
 
 
 
@@ -29,7 +29,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-         <Select/>
+      
           {children}
         </NextIntlClientProvider>
       </body>

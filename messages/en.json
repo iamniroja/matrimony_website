@@ -1,32 +1,75 @@
 {
   "title": "MANI MATRIMONY",
   "register_now": "Register now",
-   "subtitle": "When your Dream Wedding come true",
-
-  "highlight": "Dream Wedding",
-  "quote": "“Once in a while, right in the middle of an ordinary life, love gives us a fairy tale.”",
-  "free_registration": "For free registration, Call now",
+  "subtitle": "When your",
+  "sub_subtitle": "Dream Wedding come true",
+  "quote": "“Once in a while, right in the middle of an ",
+  "quote_1": "ordinary life, love gives us a fairy tale.”",
+  "free_registration": "For free registration",
+  "call_now": "Call now",
+  
   "services": {
-    "air_ticketing": "Air Ticketing",
-    "visa_consulting": "Visa Consulting",
-    "online_visa": "Online Visa Services",
-    "appointments": "All Online Appointments",
-    "insurance": "Travel Insurance & Itinerary",
-    "hotel_booking": "Hotel Booking",
-    "airport_transport": "Airport Transportation",
-    "translation": "Translation (Tamil, English, Dutch)"
+    "air_ticketing": {
+      "name": "Air Ticketing",
+    "image": "/assets/Airport.png"
+    },
+    "visa_consulting": {
+      "name": "Visa Consulting",
+      "image": "/assets/out1.png"
+    },
+    "online_visa": {
+      "name": "Online Visa Services",
+      "image": "/assets/online package Tracking.png"
+    },
+    "appointments": {
+      "name": "All Online Appointments",
+      "image": "/assets/Internet.png"
+    },
+    "insurance": {
+      "name": "Travel Insurance & Itinerary",
+      "image": "/assets/out2.png"
+    },
+    "hotel_booking": {
+      "name": "Hotel Booking",
+      "image": "/assets/Booking.png"
+    },
+    "airport_transport": {
+      "name": "Airport Transportation",
+    "image": "/assets/Public Transportation.png"
+    },
+    "translation": {
+      "name": "Translation (Tamil, English, Dutch)",
+       "image": "/assets/Translator.png"
+    }
   },
-  "contact": {
+
+ "contact": {
     "title": "Mani Travels & Tours (Pvt) Ltd",
     "subtitle": "Visa consultation",
-    "phone_1": "+94 74 725 978",
-    "call_1":"Call now",
-    "phone_2": "011 239 144 6",
-    "call_2":"Call now",
-    "address": "No 312 Sea Street, Colombo-11",
-    "open_map": "Open in map",
-    "email": "common1187@gmail.com",
-    "send":"Send now"
-    
-  }
+
+    "phone_1": {
+        "text": "+94 74 725 978",
+        "action": "Call now",
+        "link": "tel:+9474725978",
+        "image": "/assets/phone.png"
+    },
+    "phone_2": {
+        "text": "011 239 144 6",
+        "action": "Call now",
+        "link": "tel:0112391446",
+        "image": "/assets/Land.png"
+    },
+    "address": {
+        "text": "No 312 Sea Street, Colombo-11",
+        "action": "Open in map",
+        "link": "https://www.google.com/maps/search/?q=No+312+Sea+Street+Colombo-11",
+        "image": "/assets/Outline.png"
+    },
+    "email": {
+        "text": "common1187@gmail.com",
+        "action": "Send mail",
+        "link": "mailto:common1187@gmail.com",
+        "image": "/assets/Email.png"
+    }
+}
 }
