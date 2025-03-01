@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)", ], // Use the Poppins font globally
+        sans: ["Poppins", "sans-serif"],
       },
     },
   },

@@ -5,16 +5,16 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+export const Header = () => {
   const t = useTranslations();
   const router = useRouter();
   const pathname = usePathname(); // Get current path
 
   return (
-    <header className="bg-white shadow-lg px-6 md:px-20 py-4 md:py-6 flex justify-between items-center">
+    <header className="bg-white shadow-lg px-6 md:px-20 py-2 md:py-4 flex justify-between items-center">
       <div className="flex items-center">
         <Image src="/assets/heart.png" alt="Heart Icon" width={40} height={40} />
-        <h1 className="ml-2 text-lg md:text-xl font-bold text-gray-600">{t("title")}</h1>
+        <h1 className="ml-2 text-lg  md:text-2xl font-extrabold text-gray-600">{t("title")}</h1>
       </div>
 
       {/* Language Switcher */}
@@ -48,3 +48,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;

@@ -1,38 +1,29 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {Locale, routing} from '@/i18n/routing';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { Locale, routing } from "@/i18n/routing";
 import "@/app/globals.css";
 
-
-
-
- 
 export default async function LocaleLayout({
   children,
-  params,
+  params, // Params should be awaited here
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string }; // Define as string
 }) {
-  // Ensure that the incoming `locale` is valid
-  const{locale} = await params;
+  // Ensure `params` is awaited before using it
+  const { locale } = await params; // Await params to access locale
+
   if (!routing.locales.includes(locale as Locale)) {
+    console.error(`Invalid locale: ${locale}`);
     notFound();
   }
- 
-  // Providing all messages to the client
-  // side is the easiest way to get started
+
   const messages = await getMessages();
- 
+
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-      
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {children} {/* No <html> or <body> here */}
+    </NextIntlClientProvider>
   );
 }

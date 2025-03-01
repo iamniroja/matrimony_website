@@ -2,16 +2,15 @@ import "../globals.css";
 import Header from "@/app/components/Header";
 import Hero from "@/app/components/Hero";
 
-export default function LocaleLayout() {
+export const Page=()=> {
   return (
-    <>
-     <html lang="en">  {/* This is wrong */}
-        <body>
-         
-        </body>
-      </html>
-      <Header />
-      <Hero />
-    </>
+    
+     <div>
+        <Header />
+        <Hero />
+        
+        </div>
+      
   );
 }
+export default Page;
